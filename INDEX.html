@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fontes de Energia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Energia+</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sources">Fontes</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="hero-text">
+      <h1>Fontes de Energia Sustentável</h1>
+      <p>Conheça as principais fontes de energia que movem o mundo de forma limpa e sustentável.</p>
+      <a href="#sources" class="btn">Saiba Mais</a>
+    </div>
+  </section>
+
+  <section id="sources" class="sources-section">
+    <h2>Principais Fontes de Energia</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Energia Solar" />
+        <h3>Energia Solar</h3>
+        <p>Gerada a partir da luz do sol, é uma fonte limpa, renovável e sustentável.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="Energia Eólica" />
+        <h3>Energia Eólica</h3>
+        <p>Obtida da força do vento, gerando eletricidade sem poluentes.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=400&q=80" alt="Energia Hidrelétrica" />
+        <h3>Energia Hidrelétrica</h3>
+        <p>Produzida pelo movimento da água em barragens, uma fonte renovável.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1486308510493-cb4f3d4d3efb?auto=format&fit=crop&w=400&q=80" alt="Energia Geotérmica" />
+        <h3>Energia Geotérmica</h3>
+        <p>Originada do calor da Terra, usada para eletricidade e aquecimento.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbe2?auto=format&fit=crop&w=400&q=80" alt="Energia Biomassa" />
+        <h3>Energia Biomassa</h3>
+        <p>Derivada de matéria orgânica, queimada ou convertida em biogás.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contato</h2>
+    <form id="contact-form" onsubmit="return false;">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+      <p id="form-message"></p>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Energia+. Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
